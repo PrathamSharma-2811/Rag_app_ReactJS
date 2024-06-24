@@ -1,13 +1,13 @@
-### README for FastAPI LLM-based Query API
+### README for Flask LLM-based Query API
 
-# FastAPI LLM-based Query API
+# Flask LLM-based Query API
 
-This project sets up a FastAPI application that leverages a language model to handle inquiries related to animals' laws, acts, and overall well-being. It uses various modules for loading, processing, and querying a document to generate responses based on input questions.
+This project sets up a Flask application that leverages a language model to handle inquiries related to animals' laws, acts, and overall well-being. It uses various modules for loading, processing, and querying a document to generate responses based on input questions.
 
 ## Overview of Modules
 
-### FastAPI
-- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
+### Flask
+- **Flask**: A micro web framework written in Python.
 
 ### Pydantic
 - **Pydantic**: Used for data validation and settings management using Python type annotations.
@@ -15,6 +15,7 @@ This project sets up a FastAPI application that leverages a language model to ha
 ### LangChain Community Modules
 - **Chroma**: A vector store used to store and retrieve document embeddings.
 - **PyPDFLoader**: Loads PDF documents.
+- **DirectoryLoader**: Loads the data .i.e, any text file and pdf in the specified director
 - **RecursiveCharacterTextSplitter**: Splits the document into manageable chunks for processing.
 
 ### LangChain Schema & Core
@@ -41,8 +42,8 @@ This project sets up a FastAPI application that leverages a language model to ha
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/PrathamSharma-2811/Rag_app_ReactJS.git
-    cd Rag_app_ReactJS
+    git clone https://github.com/your-username/fastapi-llm-query.git
+    cd fastapi-llm-query
     ```
 
 2. Create a virtual environment and activate it:
@@ -59,10 +60,10 @@ This project sets up a FastAPI application that leverages a language model to ha
 
 ### Running the Application
 
-1. Ensure you have the PDF document (`animal.pdf`) in the project directory OR you have a folder ('api/data') that contains text files or pdf.
+1. Ensure you have the PDF document (`animal.pdf`) or any text file in the folder ('data') in the project directory.
 2. Start the FastAPI server:
     ```sh
-    uvicorn main:app --reload
+    python app.py
     ```
 
 ### Testing the API
@@ -88,11 +89,12 @@ fastapi-llm-query/
 
 ### Dependencies
 
-- `flask`
+- `fastapi`
 - `pydantic`
 - `langchain-community`
 - `langchain-core`
 - `langchain-huggingface`
+- `uvicorn`
 - `huggingface-hub`
 
 
@@ -168,11 +170,4 @@ This is a React-based chatbot application that utilizes OpenAI's GPT model to ge
 - `react-icons`: Collection of icons for React.
 - `vite`: Next-generation front-end tooling.
 
-### Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### License
-
-This project is licensed under the MIT License.
 
