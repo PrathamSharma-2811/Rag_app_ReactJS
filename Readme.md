@@ -41,8 +41,8 @@ This project sets up a FastAPI application that leverages a language model to ha
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/fastapi-llm-query.git
-    cd fastapi-llm-query
+    git clone https://github.com/PrathamSharma-2811/Rag_app_ReactJS.git
+    cd Rag_app_ReactJS
     ```
 
 2. Create a virtual environment and activate it:
@@ -59,7 +59,7 @@ This project sets up a FastAPI application that leverages a language model to ha
 
 ### Running the Application
 
-1. Ensure you have the PDF document (`animal.pdf`) in the project directory.
+1. Ensure you have the PDF document (`animal.pdf`) in the project directory OR you have a folder ('api/data') that contains text files or pdf.
 2. Start the FastAPI server:
     ```sh
     uvicorn main:app --reload
@@ -88,12 +88,11 @@ fastapi-llm-query/
 
 ### Dependencies
 
-- `fastapi`
+- `flask`
 - `pydantic`
 - `langchain-community`
 - `langchain-core`
 - `langchain-huggingface`
-- `uvicorn`
 - `huggingface-hub`
 
 
